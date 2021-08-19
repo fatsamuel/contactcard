@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import ContactCard from "./ContactCard"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="contacts">
+      <ContactCard 
+      contact={{name: "Mr. Whiskerson", 
+      imUrl : "http://www.w3.org/2000/svg", 
+      phone :"123456", 
+      email : "hello@test.com"}} 
+      />
+      <ContactCard 
+      contact={{name: "Mr. Whiskerson", 
+      imUrl : "http://www.w3.org/2000/svg", 
+      phone :"123456", 
+      email : "hello@test.com"}}  
+      />
+      <ContactCard 
+      
+      contact={{name: "Mr. Whiskerson", 
+      imUrl : "http://www.w3.org/2000/svg", 
+      phone :"123456", 
+      email : "hello@test.com"}} 
+      />
     </div>
   );
 }
